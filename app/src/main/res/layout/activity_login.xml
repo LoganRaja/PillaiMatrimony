@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="in.compunet.pillaimatrimony.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:scaleType="fitStart"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="Pillai Matrimony"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btn_register_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="REGISTER FREE"
+                android:background="@android:color/transparent"
+                android:textColor="#ff8a0c"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="MOBILE NUMBER/ EMAIL ID" />
+
+        <EditText
+            android:id="@+id/edt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="hari@gmail.com"
+            android:inputType="text"
+            android:background="@drawable/bg_edit_text"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="PASSWORD" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edit_text"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="20dp"
+            app:hintAnimationEnabled="false"
+            app:passwordToggleTint="@color/colorAccent"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:text="hari@123"
+                android:background="@android:color/transparent"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:background="@drawable/round_corner_button"
+            android:textColor="@color/colorWhite"
+            android:text="LOGIN"
+            android:layout_marginBottom="20dp"
+            android:textSize="12sp"
+            android:textAllCaps="false"/>
+
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Forgot Password?"
+            android:layout_gravity="end"
+            android:textSize="10sp"
+            android:textColor="#ff8a0c" />
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_corner_white"
+            android:textColor="#ff8a0c"
+            android:text="Not a member? Register FREE"
+            android:layout_marginBottom="20dp"
+            android:textSize="12sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/snackbarlocation">
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

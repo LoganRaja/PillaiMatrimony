@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fcf9f9"
+    android:id="@+id/root_view"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:scaleType="fitStart"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="Pillai Matrimony"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_vertical"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="LOGIN"
+                android:background="@android:color/transparent"
+                android:textColor="#ff8a0c"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#9cba3854"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="MILLIONS OF HAPPY MARRIAGES\n YOURS COULD BE NEXT!"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="FIND THE PERFET MATCH  REGISTER FREE!" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="PROFILE CREATED FOR"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spr_profile_created_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:spinnerMode="dialog"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_dropdown" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="NAME"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:inputType="textPersonName|textCapWords"
+                android:background="@drawable/bg_edit_text" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="GENDER"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edit_text"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edit_text"
+                        android:text="Female" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="DATE OF BIRTH"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/colorBlock"
+                android:background="@drawable/bg_dropdown"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="MOBILE NUMBER"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:inputType="phone"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edit_text"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="EMAIL"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edit_text"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="PASSWORD"
+                android:textColor="@color/colorPrimary" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edit_text"
+                app:hintAnimationEnabled="false"
+                app:passwordToggleTint="@color/colorAccent"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:text="Password must contain minimum 8 characters at least 1 Alphabet, 1 Number and 1 Special Character"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txt_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/Terms_and_conditions"
+                android:textColor="@color/colorBlock"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner_button"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    
+   
+    
+</LinearLayout>

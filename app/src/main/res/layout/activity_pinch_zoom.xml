@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="#bf535151"
+    android:padding="20dp"
+    android:gravity="center">
+
+
+
+    <in.compunet.pillaimatrimony.TouchImageView
+        android:id="@+id/img_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:layout_weight="1.3"
+        android:src="@drawable/user"
+        android:background="#c4f5f0f0"/>
+
+</LinearLayout>

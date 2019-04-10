@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rc_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cfc7c7"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_folder"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:background="@color/colorWhite"
+                    />
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:layout_gravity="end" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_folder_name"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="fdsdffsgfggdgddfdfgdgdgd"
+                android:background="@color/colorAccent"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_image_count"
+                android:textColor="#dfdfdf"
+                android:text="dfasdaf"
+                android:background="@color/colorAccent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
